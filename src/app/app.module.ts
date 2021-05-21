@@ -9,6 +9,7 @@ import { ComponentLevel2Component } from './component-level2/component-level2.co
 import { ModuleLevel1Component } from './module-level1/module-level1.component';
 import { ModuleLevel2Component } from './module-level2/module-level2.component';
 import { Log3Service } from './log3.service';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Log3Service } from './log3.service';
     ComponentLevel1Component,
     ComponentLevel2Component,
     ModuleLevel1Component,
-    ModuleLevel2Component
+    ModuleLevel2Component,
+    AboutComponent
   ],
   imports: [
     BrowserModule
