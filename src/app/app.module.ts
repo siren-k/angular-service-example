@@ -6,6 +6,9 @@ import { CarComponent } from './car/car.component';
 import { HomeComponent } from './home/home.component';
 import { ComponentLevel1Component } from './component-level1/component-level1.component';
 import { ComponentLevel2Component } from './component-level2/component-level2.component';
+import { ModuleLevel1Component } from './module-level1/module-level1.component';
+import { ModuleLevel2Component } from './module-level2/module-level2.component';
+import { Log3Service } from './log3.service';
 
 @NgModule({
   declarations: [
@@ -13,12 +16,14 @@ import { ComponentLevel2Component } from './component-level2/component-level2.co
     CarComponent,
     HomeComponent,
     ComponentLevel1Component,
-    ComponentLevel2Component
+    ComponentLevel2Component,
+    ModuleLevel1Component,
+    ModuleLevel2Component
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [Log3Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

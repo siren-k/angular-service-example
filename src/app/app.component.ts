@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LogService } from './log.service';
+import { Log1Service } from './log1.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import { LogService } from './log.service';
 export class AppComponent {
   title = 'angular-service-example';
 
-  constructor(private log: LogService) {
+  constructor(private log: Log1Service) {
     this.log.info('Hello');
     this.log.info('Hello2');
   }
