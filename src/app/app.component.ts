@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LogService } from './log.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-service-example';
+
+  constructor(private log: LogService) {
+    this.log.info('Hello');
+    this.log.info('Hello2');
+  }
+
 }
